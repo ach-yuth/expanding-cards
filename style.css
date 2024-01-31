@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Cute+Font&display=swap");
+
+.panel {
+  flex: 0.5;
+  height: 80vh;
+  margin: 10px;
+  border-radius: 10px;
+  color: white;
+  background: no-repeat cover;
+  position: relative;
+  cursor: pointer;
+  transition: flex 0.7s ease-in-out;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  box-shadow: 1px 1px 2px 3px black;
+  border-radius: 10px;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Cute Font", sans-serif;
+}
+.panel h3 {
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  right: 40px;
+  font-size: 24px;
+  transition: 1s ease-out;
+}
+.active {
+  flex: 4;
+}
+.active h3 {
+  opacity: 1;
+}
+h1 {
+  letter-spacing: 2px;
+}

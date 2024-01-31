@@ -44,3 +44,28 @@ body {
 h1 {
   letter-spacing: 2px;
 }
+@media (max-width: 700px) {
+  .panel:nth-child(4),
+  .panel:nth-child(5),
+  .panel:nth-child(6),
+  .panel:nth-child(7),
+  .panel:nth-child(8) {
+    display: none;
+  }
+  .container {
+    width: 100vw;
+  }
+}
+@media (max-width: 900px) {
+  .panel:nth-child(6),
+  .panel:nth-child(7),
+  .panel:nth-child(8) {
+    display: none;
+  }
+  .container {
+    width: 100vw;
+  }
+  .active {
+    flex: 3;
+  }
+}
